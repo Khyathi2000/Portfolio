@@ -16,9 +16,10 @@
     <!-- --------------home----------- -->
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="navbar">
                 <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
+                <ul>
+                <!-- <ul class = "list-collapse" id="sidemenu" onclick="mytogglefunction()"> -->
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -29,31 +30,58 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-row">
-            <div class="header-col-1">
-                <div class="header-text">
-                    <p>Hello,</p>
-                    <h1>I'm <span>Khyathi</span> <br> From India</h1>
+                <div class="header-col-1">
+                    <div class="header-text">
+                        <p>Hello,</p>
+                        <h1>I'm <span>Khyathi,</span> <br>Analyst at Deloitte</h1>
+                    </div>
+
                 </div>
-                
-            </div>
-            <div class="header-col-2">
-                <img src="images/user.jpg">
-            </div>
+                <div class="header-col-2">
+                    <img src="images/user.jpg">
+                </div>
             </div>
         </div>
     </div>
     <!-- ------------about--------- -->
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/background.jpg">
-                </div>
+            
+
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium commodi libero,
-                        beatae repellendus culpa nihil aspernatur cum nulla dolorem hic consequatur, quaerat ipsam,
-                        dolores minus aliquid voluptatibus? Odio, provident. </p>
+                    <p>I'm Khyathi, a dedicated and driven professional with a strong foundation in computer science,
+                        currently thriving in the challenging world of data engineering. An alumnus of the prestigious
+                        Indian Institute of Technology, Jodhpur. My academic journey has provided me with a robust
+                        understanding of core computer science principles, which has served as a launch pad for my
+                        professional pursuits.
+                    </p>
+                    <br />
+                    <p>
+
+                        Having undertaken an internship with Amazon as a Software Developer, I gained valuable
+                        experience in the industry while working on high-impact projects. The exposure to practical
+                        software development and collaboration with a dynamic team refined my skills and enhanced my
+                        learning, establishing a strong foundation for my current role.
+
+                    </p>
+                    <br />
+                    <p>
+
+                        As an Analyst at Deloitte, my role centres around leveraging data to drive strategy and
+                        performance. My expertise in Python, Pyspark, AWS, Airflow etc have been crucial in this role,
+                        allowing me to tackle complex problems and develop effective solutions.
+
+                    </p>
+                    <br />
+                    <p>
+
+                        The capacity of data to unearth insights and drive decision-making is something that has always
+                        fascinated me. My ambition is to employ my skills and passion in a role as a data scientist or
+                        ML engineer in the future. With my infinite enthusiasm for learning, coupled with my technical
+                        expertise and industry experience, I am confident in my ability to excel in my role and make
+                        meaningful contributions in the field.</p>
+                        <div class="row">
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -76,15 +104,17 @@
 
                     <div class="tab-contents " id="certifications">
                         <ul>
-                            <li>AWS Certified Cloud Practitioner</li>
-                            <li>Deloitte AI Academy Certified</li>
+                            <li>AWS Certified Cloud Practitioner - <a href="images/aws_ccp_certificate.pdf">View
+                                    Certificate</a></li>
+                            <li>Deloitte AI Academy Certified - <a
+                                    href="images/deloitte_ai_academy_certificate.pdf">View Certificate</a></li>
                         </ul>
                     </div>
 
                     <div class="tab-contents " id="onlineCourseWork">
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Ultimate AWS Certified Cloud Practitioner, 2023 - Udemy</li>
+                            <li>Machine Learning by Andrew NG - Coursera</li>
                         </ul>
                     </div>
 
@@ -94,17 +124,21 @@
     </div>
     <!-- ------------skills--------- -->
     <div id="skills">
-        <div class="container">
+
+        <div class="container"> 
             <h1 class="sub-title">Skills</h1>
+            <div class="skills-section-for-big-screen">
             <div class="skills-tab-titles">
-                <p class="skills-tab-links skills-active-link" onclick="skillsopentab('programming-languages')">Programming Languages
-                </p>
-                <p class="skills-tab-links" onclick="skillsopentab('web-dev')">Web Development</p>
-                <p class="skills-tab-links" onclick="skillsopentab('aws')">AWS</p>
-                <p class="skills-tab-links" onclick="skillsopentab('dl-tools')">Deep Learning Tools</p>
-                <p class="skills-tab-links" onclick="skillsopentab('de-tools')">Data Engineering Tools</p>
-                <p class="skills-tab-links" onclick="skillsopentab('os')">OS</p>
-                <p class="skills-tab-links" onclick="skillsopentab('utility')">Utility</p>
+                
+                    <p class="skills-tab-links skills-active-link" onclick="skillsopentab('programming-languages')">
+                        Programming Languages</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('web-dev')">Web Development</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('aws')">AWS</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('dl-tools')">Deep Learning Tools</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('de-tools')">Data Engineering Tools</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('os')">OS</p>
+                    <p class="skills-tab-links" onclick="skillsopentab('utility')">Utility</p>
+                
             </div>
 
             <div class="skills-tab-contents skills-active-tab" id="programming-languages">
@@ -114,9 +148,6 @@
                     </div>
                     <div>
                         <h2>Cpp</h2>
-                    </div>
-                    <div>
-                        <h2>Java</h2>
                     </div>
                     <div>
                         <h2>Python</h2>
@@ -217,116 +248,441 @@
                     </div>
                 </div>
             </div>
+            </div>
 
+            <div class="skills-section-for-small-screen">
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">Programming Languages</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>C</h2>
+                        </div>
+                        <div>
+                            <h2>Cpp</h2>
+                        </div>
+                        <div>
+                            <h2>Python</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">Web Development</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>HTML</h2>
+                        </div>
+                        <div>
+                            <h2>CSS</h2>
+                        </div>
+                        <div>
+                            <h2>Js</h2>
+                        </div>
+                        <div>
+                            <h2>ReactJs</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">AWS</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>S3</h2>
+                        </div>
+                        <div>
+                            <h2>EMR</h2>
+                        </div>
+                        <div>
+                            <h2>Athena</h2>
+                        </div>
+                        <div>
+                            <h2>MAA</h2>
+                        </div>
+                        <!-- <div>
+                            <h2 style="font-size: 10px">DyanmoDB</h2>
+                        </div> -->
+    
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">Deep Learning Tools</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>Pandas</h2>
+                        </div>
+                        <div>
+                            <h2>OpenCV</h2>
+                        </div>
+                        <div>
+                            <h2>Scikit-learn</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">Data Engineering Tools</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>PySpark</h2>
+                        </div>
+                        <div>
+                            <h2>Airflow</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">OS</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>Windows</h2>
+                        </div>
+                        <div>
+                            <h2>Linux</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skills-tab-contents-for-small-screen">
+                    <p class="skills-tab-links">Utility</p>
+                    <div class="skills-list">
+                        <div>
+                            <h2>Git</h2>
+                        </div>
+                        <div>
+                            <h2>VSCode</h2>
+                        </div>
+                        <!-- <div>
+                            <h2>DBeaver</h2>
+                        </div> -->
+                        <div>
+                            <h2>PyCharm</h2>
+                        </div>
+                        <div>
+                            <h2>Jira</h2>
+                        </div>
+                    </div>
+            </div>
 
-        </div>
+        </div> 
     </div>
     <!-- ----------------projects---- -->
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
             <div class="project-list">
-                <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Design</h2>
+                <div id="myModalBtnId1" class="project-work">
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Who Looks Similiar To Whom</h2>
                     <div class="project-layer">
-<!-- ---------------modal-start---------- -->
+                        <!-- ---------------modal-start---------- -->
 
-<button id="myModalBtnId" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId1" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="modalclose">&times;</span>
-    <p style="color: black">Some text in the Modal..
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
+                        <!-- The Modal -->
+                        <div id="myModal1" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Who Looks Similiar To Whom </h3>
+                                <p style="color: black">
+                                    Developed an Algorithm which displays the most similar images to the given input
+                                    image from the dataset.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Worked with a huge dataset of 66k Images.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Used LightCNN to train the model along with few python libraries like scikit-learn
+                                    etc.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Cosine Similarity is used as the measure of similarity between two images.
+                                </p>
+                                <a href="https://github.com/Khyathi2000/Who-looks-similar-to-whom-BTP" target="_blank"
+                                    class="btn btn2">Project Link</a>
 
-</div>
+                            </div>
+
+                        </div>
                         <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></a> -->
                     </div>
                 </div>
                 <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Ui/UX Design</h2>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Online Delivery System</h2>
                     <div class="project-layer">
 
-                        <button id="myModalBtnId2" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId2" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
 
-<!-- The Modal -->
-<div id="myModal2" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="modalclose">&times;</span>
-    <p style="color: black">Some text in the Modal..
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
-
-</div>
-  
-                    </div>
-                </div>
-                <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>App Design</h2>
-                    <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
                         <!-- The Modal -->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="modalclose">&times;</span>
-      <p style="color: black">Some text in the Modal..
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-      </p>
-    </div>
-  
-  </div>
+                        <div id="myModal2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3>Online Delivery System</h3>
+                                <p style="color: black">
+                                    Developed an online delivery system which was scalable where people staying in IIT
+                                    Jodhpur can order groceries from the IIT Jodhpur Community center.
+                                </p>
+                                <br>
+                                <p style="color: black">
+                                    Used Cpp object oriented programming concepts to achieve this efficiently.
+                                </p>
+                                <a href="https://github.com/Khyathi2000/OOADProject" target="_blank"
+                                    class="btn btn2">Project Link</a>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Design</h2>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>On Demand Energy Distribution System</h2>
                     <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId3" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+                        <!-- The Modal -->
+                        <div id="myModal3" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3>On Demand Energy Distribution System</h3>
+                                <p style="color: black">Worked on solution for blockchain based p2p energy distribution
+                                    system using smart grid and smart meter.
+                                </p>
+                                <br>
+                                <p style="color: black">Identified the limitations in existing solutions for the energy
+                                    distribution systems and proposed a new architecture with increased tps.
+                                </p>
+                                <br>
+                                <p style="color: black">Our proposed solution contained three different nodes namely
+                                </p>
+                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-work">
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Service Discovery & Invocation in IoT</h2>
+                    <div class="project-layer">
+                        <button id="myModalBtnId4" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+
+                        <!-- The Modal -->
+                        <div id="myModal4" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Service Discovery & Invocation in IoT </h3>
+                                <p style="color: black">
+                                    Service Discovery in IoT
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Service Discovery in IoT
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Service Discovery in IoT
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Service Discovery in IoT
+                                </p>
+                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-work">
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Twitter Sentiment Analysis</h2>
+                    <div class="project-layer">
+                        <button id="myModalBtnId5" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+                        <!-- The Modal -->
+                        <div id="myModal5" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Twitter Sentiment Analysis </h3>
+                                <p style="color: black">
+                                    Implemented and compared various ML algorithms to determine the tone of the text
+                                    whether it is positive or negative.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Used approximately 1.6 million tweets extracted from the twitter api as the dataset.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Implemented few of the most popular algorithms like Logistic regression, Multi layer
+                                    perceptron, Linear support vector classifier.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Used Accuracy, F1score, cv_scores as performance measures.
+                                </p>
+                                <a href="https://colab.research.google.com/drive/1sOOHiezgiV9DZ0hZdXqg9HQTY6UK-Oe4?usp=sharing"
+                                    target="_blank" class="btn btn2">Project Link</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-work">
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Dooodle</h2>
+                    <div class="project-layer">
+                        <button id="myModalBtnId6" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+                        <!-- The Modal -->
+                        <div id="myModal6" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Dooodle </h3>
+                                <p style="color: black">
+                                    Developed a recreational app similar to skribble.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Developed canvas board, chat component, join meet component as part of the app.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Added extra features like video calling etc.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Used web socket, ReactJs, NodeJs technologies for developing Dooodle.
+                                </p>
+                                <a href="https://github.com/sahu6/Skrible" target="_blank" class="btn btn2">Project
+                                    Link</a>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Ui/UX Design</h2>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Mini Linux Shell</h2>
                     <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId7" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+
+                        <!-- The Modal -->
+                        <div id="myModal7" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> A Mini Linux Shell </h3>
+                                <p style="color: black">
+                                    Developed a linux shell with all basic functionalities of the built in linux shell.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Added readFile command which reads out a text file for us.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    This linux shell also accepts voice commands and execute them.
+                                </p>
+                                <a href="https://github.com/kumardot93/intractive-shell" target="_blank"
+                                    class="btn btn2">Project Link</a>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>App Design</h2>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Influence Maximization</h2>
                     <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId8" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+                        <!-- The Modal -->
+                        <div id="myModal8" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Influence Maximization </h3>
+                                <p style="color: black">
+                                    Influence Maximization
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Influence Maximization
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Influence Maximization
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Influence Maximization
+                                </p>
+                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Design</h2>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Chatbot</h2>
                     <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
-                    </div>
-                </div>
-                <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Ui/UX Design</h2>
-                    <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
-                    </div>
-                </div>
-                <div class="project-work">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>App Design</h2>
-                    <div class="project-layer">
-                        <button id="myModalBtn" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></button>
+                        <button id="myModalBtnId9" class="myModalBtn"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></button>
+                        <!-- The Modal -->
+                        <div id="myModal9" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="modalclose">&times;</span>
+                                <h3> Chatbot </h3>
+                                <p style="color: black">
+                                    Created a chatbot using RASA open source platform.
+                                </p>
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Used the knowledgeNet dataset as the source data for the dataset.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Chatbot was built on Linux platform.
+                                </p>
+                                <br />
+                                <p style="color: black">
+                                    Built a chatbot which answers a subset of company related questions like
+                                    DATE_FOUNDED, HEADQUARTERS, SUBSIDIARY_OF, FOUNDED_BY, CEO etc
+                                </p>
+                                <a href="https://colab.research.google.com/drive/1Yl-CNGxhuMCSCnwDFSutectgjgoXpsBB?usp=sharing"
+                                    target="_blank" class="btn btn2">Project Link</a>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,22 +694,22 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
+                    <div class="about-col-1">
+                        <img src="images/background.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contact-right">
                     <h1 class="sub-title">Contact Me<h1>
-                            <p> <i class="fa-regular fa-envelope"></i> khyathi2122@gmail.com</p>
+                            <p class="mail"> <i class="fa-regular fa-envelope"></i> khyathi2122@gmail.com</p>
                             <div class="sm-icons">
-                                <a href="https://www.linkedin.com/in/khyathireddy/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/Khyathi2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/khyathireddy/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/Khyathi2000" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
 
                             </div>
                             <a href="images/resume_latest.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+
                 </div>
             </div>
         </div>
@@ -371,62 +727,198 @@
             sidemenu.style.right = "-200px";
         }
 
+        var sidemenu = document.getElementById("sidemenu");
 
-        // ----------modal-------------
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myModalBtnId");
-var span = document.getElementsByClassName("modalclose")[0];
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
 
+        var sidemenu_for_skills = document.getElementById("sidemenu-for-skills");
 
-// var modals = document.getElementsByClassName("modal");
+        function openmenu_for_skills() {
+            sidemenu_for_skills.style.right = "0";
+        }
 
-// var btns = document.getElementsByClassName("myModalBtn");
-// for (let btn = 0; btn < btns.length; ibtn++) {
-//     btns[btn].onclick = function() {
-//   modals[btn].style.display = "block";
-// }
-// }
+        function closemenu_for_skills() {
+            sidemenu_for_skills.style.right = "-200px";
+        }
 
-// var spans = document.getElementsByClassName("modalclose");
-// for (let span =0; span<spans.length;span++ ){
-//     spans[span].onclick = function() {
-//   modals[span].style.display = "none";
-// }
-// }
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+        function mytogglefunction() {
+  var x = document.getElementById("sidemenu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
 }
 
-// -----------modal2
-// var modal2 = document.getElementById("myModal2");
-// var btn2 = document.getElementById("myModalBtnId2");
-// var span2 = document.getElementsByClassName("modalclose")[1];
+        // ----------modal-------------
 
-// btn2.onclick = function() {
-//   modal2.style.display = "block";
-// }
+        var modal1 = document.getElementById("myModal1");
+        var btn1 = document.getElementById("myModalBtnId1");
+        var span1 = document.getElementsByClassName("modalclose")[0];
 
-// span2.onclick = function() {
-//   modal2.style.display = "none";
-// }
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+        }
 
-// window.onclick = function(event) {
-//   if (event.target == modal2) {
-//     modal2.style.display = "none";
-//   }
-// }
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        });
+
+        var modal2 = document.getElementById("myModal2");
+        var btn2 = document.getElementById("myModalBtnId2");
+        var span2 = document.getElementsByClassName("modalclose")[1];
+
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        });
+
+        var modal3 = document.getElementById("myModal3");
+        var btn3 = document.getElementById("myModalBtnId3");
+        var span3 = document.getElementsByClassName("modalclose")[2];
+
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        });
+
+        var modal4 = document.getElementById("myModal4");
+        var btn4 = document.getElementById("myModalBtnId4");
+        var span4 = document.getElementsByClassName("modalclose")[3];
+
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+        }
+
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        });
+
+        var modal5 = document.getElementById("myModal5");
+        var btn5 = document.getElementById("myModalBtnId5");
+        var span5 = document.getElementsByClassName("modalclose")[4];
+
+        btn5.onclick = function () {
+            modal5.style.display = "block";
+        }
+
+        span5.onclick = function () {
+            modal5.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+            }
+        });
+
+        var modal6 = document.getElementById("myModal6");
+        var btn6 = document.getElementById("myModalBtnId6");
+        var span6 = document.getElementsByClassName("modalclose")[5];
+
+        btn6.onclick = function () {
+            modal6.style.display = "block";
+        }
+
+        span6.onclick = function () {
+            modal6.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal6) {
+                modal6.style.display = "none";
+            }
+        });
+
+        var modal7 = document.getElementById("myModal7");
+        var btn7 = document.getElementById("myModalBtnId7");
+        var span7 = document.getElementsByClassName("modalclose")[6];
+
+        btn7.onclick = function () {
+            modal7.style.display = "block";
+        }
+
+        span7.onclick = function () {
+            modal7.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal7) {
+                modal7.style.display = "none";
+            }
+        });
+
+        var modal8 = document.getElementById("myModal8");
+        var btn8 = document.getElementById("myModalBtnId8");
+        var span8 = document.getElementsByClassName("modalclose")[7];
+
+        btn8.onclick = function () {
+            modal8.style.display = "block";
+        }
+
+        span8.onclick = function () {
+            modal8.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal8) {
+                modal8.style.display = "none";
+            }
+        });
+
+        var modal9 = document.getElementById("myModal9");
+        var btn9 = document.getElementById("myModalBtnId9");
+        var span9 = document.getElementsByClassName("modalclose")[8];
+
+        btn9.onclick = function () {
+            modal9.style.display = "block";
+        }
+
+        span9.onclick = function () {
+            modal9.style.display = "none";
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target == modal9) {
+                modal9.style.display = "none";
+            }
+        });
 
     </script>
 </body>
