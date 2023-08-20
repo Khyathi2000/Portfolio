@@ -30,6 +30,38 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
 }
 
 .logo {
@@ -54,42 +86,13 @@ nav {
     flex-basis: 42%; 
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after{
-    content: '';
-    width:0;
-    height: 3px;
-    background-color: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-
-}
-
 .header-text{
     margin-top: 20%;
     font-size:30px;
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 
@@ -102,11 +105,11 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #ababab;
 }
-.row{
+/* .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+} */
 .about-col-1{
     flex-basis: 35%;
 }
@@ -117,13 +120,14 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 60%;  
+    /* flex-basis: 60%;   */
 }
 
 .sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    padding-bottom: 30px;
 }
 
 .tab-titles{
@@ -134,9 +138,10 @@ nav ul li a:hover::after{
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
+    color: #fff;
 }
 
 .tab-links:after{
@@ -178,14 +183,14 @@ nav ul li a:hover::after{
     padding: 30px 0;
 }
 
-.skills-list{
+.skills-section-for-big-screen .skills-tab-contents .skills-list{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.skills-list div{
+.skills-section-for-big-screen .skills-tab-contents .skills-list div{
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -194,36 +199,33 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.skills-list div i{
+.skills-section-for-big-screen .skills-tab-contents .skills-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.skills-list div h2{
+.skills-section-for-big-screen .skills-tab-contents .skills-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.skills-list div:hover{
+.skills-section-for-big-screen .skills-tab-contents .skills-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
 
-/* ---------skills from abt--------- */
-
-
 .skills-tab-titles{
     display:flex;
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
 }
 
 .skills-tab-links{
     margin-right: 50px;
     font-size: 18px;
-    font-weight: 500;
     cursor: pointer;
     position: relative;
+    font-weight: bold;
 }
 
 .skills-tab-links:after{
@@ -249,53 +251,44 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* -----------services--------- */
-
-#services{
-    padding: 30px 0;
+/* ----------for small screen---------- */
+.skills-tab-contents-for-small-screen{
+    display: block;
 }
 
-.services-list{
+.skills-tab-contents-for-small-screen .skills-tab-links{
+    margin-right: 50px;
+    margin-top : 20px;
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.skills-tab-contents-for-small-screen .skills-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    /* grid-gap: 40px; */
+    /* margin-top: 50px; */
 }
 
-.services-list div{
+.skills-tab-contents-for-small-screen .skills-list div{
     background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    /* background: #ff004f; */
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+.skills-tab-contents-for-small-screen .skills-list div h2{
+    font-size: 15px;
+    font-weight: 200;
 }
 
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
+.skills-tab-contents-for-small-screen .skills-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
 
-/* ------------projects2 */
+/* ------------projects---------- */
 #projects{
     padding: 30px 0;
 }
@@ -347,8 +340,11 @@ nav ul li a:hover::after{
 }
 
 .project-layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
+    margin-top : 30px;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 50px;
 }
 
 .project-work:hover i{
@@ -358,80 +354,6 @@ nav ul li a:hover::after{
 .project-work:hover .project-layer{
     height: 100%;
 }
-
-/* -------portfolio---- */
-#portfolio{
-    padding: 50px 0;
-}
-
-.work-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    height: 750px;
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.work-img{
-    width:100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer{
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: transform 0.5s;
-}
-
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-
-}
-
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 100%;
-}
-
 
 .btn{
     display: block;
@@ -449,6 +371,53 @@ nav ul li a:hover::after{
     background: #ff004f;
 
 }
+
+/* --------modal box ----------- */
+
+.myModalBtn {
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.modal {
+    display:none; 
+    position: fixed; 
+    z-index: 1; 
+    padding: 200px 300px 200px 300px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color:rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color:white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 50px;
+  }
+  
+  /* The Close Button */
+  .modalclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .modalclose:hover,
+  .modalclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /* ---------contact---- */
 .contact-left{
@@ -496,23 +465,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 10px;;
+.mail{
+    padding-top: 50px;
 }
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+
 
 .copyright{
     width:100%;
@@ -528,12 +484,17 @@ nav .fa-solid{
     display: none;
 }
 
+.skills-section-for-small-screen{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone-background.png);
+        /* background-image: url(images/user.jpg); */
+        height : 250px;
     }
     .header-text{
-        margin-top: 100%;
+        /* margin-top: 100%; */
         font-size:16px;
     }
     .header-text h1{
@@ -564,6 +525,12 @@ nav .fa-solid{
         left:25px;
         cursor: pointer;
     }
+
+    .list-collapse{
+    flex-basis: 100%;
+    flex-grow: 1;
+    }
+
     .sub-title{
         font-size: 40px;
     }
@@ -577,58 +544,77 @@ nav .fa-solid{
         font-size: 14px;
     }
     .tab-links{
-        font-size: 16px;
+        font-size: 12px;
         margin-right: 20px;
+        font-weight:700;
     }
+
+    /* ------------- skills for small screen --------------- */
+
+    .skills-section-for-big-screen{
+        display: none;
+    }
+
+    .skills-section-for-small-screen{
+        display: block;
+    }
+
+    /* .skills-tab-links{
+     margin-right: 50px; 
+        font-size: 10px;
+        cursor: pointer;
+        position: relative;
+        font-weight: bold;
+    } */
+
+    /* div .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    
+    .class-for-small-screen{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    div ul p{
+        display: block;
+        margin: 25px;
+    }
+    
+    div ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+    } */
+
+
+    .modal{
+        padding : 0px;
+    }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+
+    .mail{
+        font-size: 24px;
+    }
+
+
     .copyright{
         font-size: 14px;
     }
 }
 
-/* --------modal box ----------- */
 
-.myModalBtn {
-    background: none;
-    border:none;
-    cursor: pointer;
-}
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color:rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-  }
+
   
-  /* Modal Content */
-  .modal-content {
-    background-color:white;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .modalclose {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .modalclose:hover,
-  .modalclose:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
