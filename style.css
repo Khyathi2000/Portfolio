@@ -420,6 +420,12 @@ nav ul li a:hover::after{
   }
 
 /* ---------contact---- */
+.row-contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
 .contact-left{
     flex-basis: 35%;  
 }
