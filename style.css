@@ -19,6 +19,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    padding: 50px 0;
 }
 
 .container {
@@ -30,7 +31,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-weight: bold;
+    font-weight: bold; 
+    padding: 10px 10%;
+    /* background: #262626; */
+    overflow :visible;
+    z-index: 999;
+
+}
+
+.navbar{
     position: sticky;
     top: 0px;
 }
@@ -102,7 +111,7 @@ nav ul li a:hover::after{
 
 /* ---------about-------- */
 #about{
-    padding: 80px 0;
+    padding: 50px 0;
     color: #ababab;
 }
 /* .row{
@@ -180,7 +189,7 @@ nav ul li a:hover::after{
 
 /* ------------skills------------ */
 #skills{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .skills-section-for-big-screen .skills-tab-contents .skills-list{
@@ -290,7 +299,7 @@ nav ul li a:hover::after{
 
 /* ------------projects---------- */
 #projects{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .project-list{
@@ -399,6 +408,7 @@ nav ul li a:hover::after{
     background-color:white;
     margin: auto;
     padding: 20px;
+    margin-top: 70px;
     border: 1px solid #888;
     width: 80%;
     border-radius: 50px;
@@ -421,6 +431,7 @@ nav ul li a:hover::after{
 
 /* ---------contact---- */
 .row-contact{
+    padding-left : 200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -505,6 +516,9 @@ nav .fa-solid{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    .navbar{
+        position:relative;
     }
     nav .fa-solid{
         display: block;
@@ -605,6 +619,10 @@ nav .fa-solid{
 
     .modal{
         padding : 0px;
+    }
+
+    .row-contact{
+    padding-left : 0px;
     }
 
     .contact-left, .contact-right{

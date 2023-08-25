@@ -14,21 +14,22 @@
 
 <body>
     <!-- --------------home----------- -->
+    <nav class="navbar">
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <!-- <ul class = "list-collapse" id="sidemenu" onclick="mytogglefunction()"> -->
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
+        </ul>
+        <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+    </nav>
     <div id="header">
         <div class="container">
-            <nav class="navbar">
-                <img src="images/logo.png" class="logo">
-                <ul>
-                <!-- <ul class = "list-collapse" id="sidemenu" onclick="mytogglefunction()"> -->
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+
             <div class="header-row">
                 <div class="header-col-1">
                     <div class="header-text">
@@ -46,42 +47,40 @@
     <!-- ------------about--------- -->
     <div id="about">
         <div class="container">
-            
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Khyathi, a dedicated and driven professional with a strong foundation in computer science,
+                    currently thriving in the challenging world of data engineering. An alumnus of the prestigious
+                    Indian Institute of Technology, Jodhpur. My academic journey has provided me with a robust
+                    understanding of core computer science principles, which has served as a launch pad for my
+                    professional pursuits.
+                </p>
+                <br />
+                <p>
 
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm Khyathi, a dedicated and driven professional with a strong foundation in computer science,
-                        currently thriving in the challenging world of data engineering. An alumnus of the prestigious
-                        Indian Institute of Technology, Jodhpur. My academic journey has provided me with a robust
-                        understanding of core computer science principles, which has served as a launch pad for my
-                        professional pursuits.
-                    </p>
-                    <br />
-                    <p>
+                    Having undertaken an internship with Amazon as a Software Developer, I gained valuable
+                    experience in the industry while working on high-impact projects. The exposure to practical
+                    software development and collaboration with a dynamic team refined my skills and enhanced my
+                    learning, establishing a strong foundation for my current role.
 
-                        Having undertaken an internship with Amazon as a Software Developer, I gained valuable
-                        experience in the industry while working on high-impact projects. The exposure to practical
-                        software development and collaboration with a dynamic team refined my skills and enhanced my
-                        learning, establishing a strong foundation for my current role.
+                </p>
+                <br />
+                <p>
 
-                    </p>
-                    <br />
-                    <p>
+                    As an Analyst at Deloitte, my role centres around leveraging data to drive strategy and
+                    performance. My expertise in Python, Pyspark, AWS, Airflow etc have been crucial in this role,
+                    allowing me to tackle complex problems and develop effective solutions.
 
-                        As an Analyst at Deloitte, my role centres around leveraging data to drive strategy and
-                        performance. My expertise in Python, Pyspark, AWS, Airflow etc have been crucial in this role,
-                        allowing me to tackle complex problems and develop effective solutions.
+                </p>
+                <br />
+                <p>
 
-                    </p>
-                    <br />
-                    <p>
-
-                        The capacity of data to unearth insights and drive decision-making is something that has always
-                        fascinated me. My ambition is to employ my skills and passion in a role as a data scientist or
-                        ML engineer in the future. With my infinite enthusiasm for learning, coupled with my technical
-                        expertise and industry experience, I am confident in my ability to excel in my role and make
-                        meaningful contributions in the field.</p>
-                        <div class="row">
+                    The capacity of data to unearth insights and drive decision-making is something that has always
+                    fascinated me. My ambition is to employ my skills and passion in a role as a data scientist or
+                    ML engineer in the future. With my infinite enthusiasm for learning, coupled with my technical
+                    expertise and industry experience, I am confident in my ability to excel in my role and make
+                    meaningful contributions in the field.</p>
+                <div class="row">
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -125,11 +124,11 @@
     <!-- ------------skills--------- -->
     <div id="skills">
 
-        <div class="container"> 
+        <div class="container">
             <h1 class="sub-title">Skills</h1>
             <div class="skills-section-for-big-screen">
-            <div class="skills-tab-titles">
-                
+                <div class="skills-tab-titles">
+
                     <p class="skills-tab-links skills-active-link" onclick="skillsopentab('programming-languages')">
                         Programming Languages</p>
                     <p class="skills-tab-links" onclick="skillsopentab('web-dev')">Web Development</p>
@@ -138,116 +137,116 @@
                     <p class="skills-tab-links" onclick="skillsopentab('de-tools')">Data Engineering Tools</p>
                     <p class="skills-tab-links" onclick="skillsopentab('os')">OS</p>
                     <p class="skills-tab-links" onclick="skillsopentab('utility')">Utility</p>
-                
-            </div>
-
-            <div class="skills-tab-contents skills-active-tab" id="programming-languages">
-                <div class="skills-list">
-                    <div>
-                        <h2>C</h2>
-                    </div>
-                    <div>
-                        <h2>Cpp</h2>
-                    </div>
-                    <div>
-                        <h2>Python</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-tab-contents" id="web-dev">
-                <div class="skills-list">
-                    <div>
-                        <h2>HTML</h2>
-                    </div>
-                    <div>
-                        <h2>CSS</h2>
-                    </div>
-                    <div>
-                        <h2>Javascript</h2>
-                    </div>
-                    <div>
-                        <h2>ReactJs</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-tab-contents" id="aws">
-                <div class="skills-list">
-                    <div>
-                        <h2>S3</h2>
-                    </div>
-                    <div>
-                        <h2>EMR</h2>
-                    </div>
-                    <div>
-                        <h2>Athena</h2>
-                    </div>
-                    <div>
-                        <h2>Managed Apache Airflow</h2>
-                    </div>
-                    <div>
-                        <h2>DyanmoDB</h2>
-                    </div>
 
                 </div>
-            </div>
 
-            <div class="skills-tab-contents" id="dl-tools">
-                <div class="skills-list">
-                    <div>
-                        <h2>Pandas</h2>
-                    </div>
-                    <div>
-                        <h2>OpenCV</h2>
-                    </div>
-                    <div>
-                        <h2>Scikit-learn</h2>
+                <div class="skills-tab-contents skills-active-tab" id="programming-languages">
+                    <div class="skills-list">
+                        <div>
+                            <h2>C</h2>
+                        </div>
+                        <div>
+                            <h2>Cpp</h2>
+                        </div>
+                        <div>
+                            <h2>Python</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-tab-contents" id="de-tools">
-                <div class="skills-list">
-                    <div>
-                        <h2>PySpark</h2>
-                    </div>
-                    <div>
-                        <h2>Airflow</h2>
+                <div class="skills-tab-contents" id="web-dev">
+                    <div class="skills-list">
+                        <div>
+                            <h2>HTML</h2>
+                        </div>
+                        <div>
+                            <h2>CSS</h2>
+                        </div>
+                        <div>
+                            <h2>Javascript</h2>
+                        </div>
+                        <div>
+                            <h2>ReactJs</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-tab-contents" id="os">
-                <div class="skills-list">
-                    <div>
-                        <h2>Windows</h2>
-                    </div>
-                    <div>
-                        <h2>Linux</h2>
+                <div class="skills-tab-contents" id="aws">
+                    <div class="skills-list">
+                        <div>
+                            <h2>S3</h2>
+                        </div>
+                        <div>
+                            <h2>EMR</h2>
+                        </div>
+                        <div>
+                            <h2>Athena</h2>
+                        </div>
+                        <div>
+                            <h2>Managed Apache Airflow</h2>
+                        </div>
+                        <div>
+                            <h2>DyanmoDB</h2>
+                        </div>
+
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-tab-contents" id="utility">
-                <div class="skills-list">
-                    <div>
-                        <h2>Git</h2>
-                    </div>
-                    <div>
-                        <h2>VSCode</h2>
-                    </div>
-                    <div>
-                        <h2>DBeaver</h2>
-                    </div>
-                    <div>
-                        <h2>PyCharm</h2>
-                    </div>
-                    <div>
-                        <h2>Jira</h2>
+                <div class="skills-tab-contents" id="dl-tools">
+                    <div class="skills-list">
+                        <div>
+                            <h2>Pandas</h2>
+                        </div>
+                        <div>
+                            <h2>OpenCV</h2>
+                        </div>
+                        <div>
+                            <h2>Scikit-learn</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="skills-tab-contents" id="de-tools">
+                    <div class="skills-list">
+                        <div>
+                            <h2>PySpark</h2>
+                        </div>
+                        <div>
+                            <h2>Airflow</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-tab-contents" id="os">
+                    <div class="skills-list">
+                        <div>
+                            <h2>Windows</h2>
+                        </div>
+                        <div>
+                            <h2>Linux</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-tab-contents" id="utility">
+                    <div class="skills-list">
+                        <div>
+                            <h2>Git</h2>
+                        </div>
+                        <div>
+                            <h2>VSCode</h2>
+                        </div>
+                        <div>
+                            <h2>DBeaver</h2>
+                        </div>
+                        <div>
+                            <h2>PyCharm</h2>
+                        </div>
+                        <div>
+                            <h2>Jira</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="skills-section-for-small-screen">
@@ -265,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">Web Development</p>
                     <div class="skills-list">
@@ -283,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">AWS</p>
                     <div class="skills-list">
@@ -302,10 +301,10 @@
                         <!-- <div>
                             <h2 style="font-size: 10px">DyanmoDB</h2>
                         </div> -->
-    
+
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">Deep Learning Tools</p>
                     <div class="skills-list">
@@ -320,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">Data Engineering Tools</p>
                     <div class="skills-list">
@@ -332,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">OS</p>
                     <div class="skills-list">
@@ -344,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skills-tab-contents-for-small-screen">
                     <p class="skills-tab-links">Utility</p>
                     <div class="skills-list">
@@ -364,16 +363,17 @@
                             <h2>Jira</h2>
                         </div>
                     </div>
-            </div>
+                </div>
 
-        </div> 
+            </div>
+        </div>
     </div>
     <!-- ----------------projects---- -->
     <div id="projects">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
             <div class="project-list">
-                <div id="myModalBtnId1" class="project-work">
+                <div class="project-work">
                     <!-- <i class="fa-solid fa-crop"></i> -->
                     <h2>Who Looks Similiar To Whom</h2>
                     <div class="project-layer">
@@ -394,7 +394,7 @@
                                 </p>
                                 <br />
                                 <p style="color: black">
-                                    Worked with a huge dataset of 66k Images.
+                                    Worked with a huge dataset of 66k Images to train our model.
                                 </p>
                                 <br />
                                 <p style="color: black">
@@ -407,11 +407,8 @@
                                 </p>
                                 <a href="https://github.com/Khyathi2000/Who-looks-similar-to-whom-BTP" target="_blank"
                                     class="btn btn2">Project Link</a>
-
                             </div>
-
                         </div>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></a> -->
                     </div>
                 </div>
                 <div class="project-work">
@@ -430,7 +427,7 @@
                                 <h3>Online Delivery System</h3>
                                 <p style="color: black">
                                     Developed an online delivery system which was scalable where people staying in IIT
-                                    Jodhpur can order groceries from the IIT Jodhpur Community center.
+                                    Jodhpur can order groceries from the IIT Jodhpur Community center easily by staying at their home.
                                 </p>
                                 <br>
                                 <p style="color: black">
@@ -459,14 +456,13 @@
                                 <p style="color: black">Worked on solution for blockchain based p2p energy distribution
                                     system using smart grid and smart meter.
                                 </p>
+                                <br/>
+                                <p style="color: black">Proposed a hierarchial network for the energy distribution</p>
                                 <br>
-                                <p style="color: black">Identified the limitations in existing solutions for the energy
+                                <p style="color: black; padding-bottom: 100px">Identified the limitations in existing solutions for the energy
                                     distribution systems and proposed a new architecture with increased tps.
                                 </p>
-                                <br>
-                                <p style="color: black">Our proposed solution contained three different nodes namely
-                                </p>
-                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+                                <!-- <a href="" target="_blank" class="btn btn2">Project Link</a> -->
                             </div>
 
                         </div>
@@ -487,21 +483,22 @@
                                 <span class="modalclose">&times;</span>
                                 <h3> Service Discovery & Invocation in IoT </h3>
                                 <p style="color: black">
-                                    Service Discovery in IoT
+                                   Proposed a simple, scalable, trustworthy design for service discovery.
                                 </p>
                                 <br />
                                 <p style="color: black">
-                                    Service Discovery in IoT
+                                    Our architecture has three different nodes of different functionalities.
+                                    
                                 </p>
                                 <br />
                                 <p style="color: black">
-                                    Service Discovery in IoT
+                                    Services are running on the producer node and consumer nodes are the ones which utilise them.
                                 </p>
                                 <br />
-                                <p style="color: black">
-                                    Service Discovery in IoT
+                                <p style="color: black ; padding-bottom: 100px">
+                                    Manager node keeps track of active and inactive producer nodes and plays an important role in maintaining the trust.
                                 </p>
-                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+                                <!-- <a href="" target="_blank" class="btn btn2">Project Link</a> -->
 
                             </div>
 
@@ -527,7 +524,7 @@
                                 </p>
                                 <br />
                                 <p style="color: black">
-                                    Used approximately 1.6 million tweets extracted from the twitter api as the dataset.
+                                    Used approximately 1.6 million tweets extracted from the twitter API as the dataset.
                                 </p>
                                 <br />
                                 <p style="color: black">
@@ -574,7 +571,7 @@
                                 <p style="color: black">
                                     Used web socket, ReactJs, NodeJs technologies for developing Dooodle.
                                 </p>
-                                <a href="https://github.com/sahu6/Skrible" target="_blank" class="btn btn2">Project
+                                <a href="https://github.com/Khyathi2000/Dooodle/tree/main/Dooodle" target="_blank" class="btn btn2">Project
                                     Link</a>
 
                             </div>
@@ -606,7 +603,7 @@
                                 <p style="color: black">
                                     This linux shell also accepts voice commands and execute them.
                                 </p>
-                                <a href="https://github.com/kumardot93/intractive-shell" target="_blank"
+                                <a href="https://github.com/Khyathi2000/Mini-Linux-Shell" target="_blank"
                                     class="btn btn2">Project Link</a>
 
                             </div>
@@ -625,23 +622,22 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="modalclose">&times;</span>
-                                <h3> Influence Maximization </h3>
+                                <h3> Influence Maximisation </h3>
                                 <p style="color: black">
-                                    Influence Maximization
+                                    Compared various algorithms available for Influence Maximisation
+                                   
+
                                 </p>
                                 <br />
                                 <p style="color: black">
-                                    Influence Maximization
+                                    Implemented Greedy, Sieve Streaming, IC Maintenance, Fully dynamic submodular Maximisation Algorithms.
                                 </p>
                                 <br />
-                                <p style="color: black">
-                                    Influence Maximization
+                                <p style="color: black;  padding-bottom: 100px">
+                                    Metric considered - f(S): Spread of the influence should be maximum.
                                 </p>
-                                <br />
-                                <p style="color: black">
-                                    Influence Maximization
-                                </p>
-                                <a href="" target="_blank" class="btn btn2">Project Link</a>
+                                
+                                <!-- <a href="" target="_blank" class="btn btn2">Project Link</a> -->
 
                             </div>
 
@@ -677,7 +673,7 @@
                                     Built a chatbot which answers a subset of company related questions like
                                     DATE_FOUNDED, HEADQUARTERS, SUBSIDIARY_OF, FOUNDED_BY, CEO etc
                                 </p>
-                                <a href="https://colab.research.google.com/drive/1Yl-CNGxhuMCSCnwDFSutectgjgoXpsBB?usp=sharing"
+                                <a href="https://github.com/Khyathi2000/chatbot"
                                     target="_blank" class="btn btn2">Project Link</a>
 
                             </div>
@@ -717,15 +713,6 @@
     </div>
 
     <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
 
         var sidemenu = document.getElementById("sidemenu");
 
@@ -748,13 +735,13 @@
         }
 
         function mytogglefunction() {
-  var x = document.getElementById("sidemenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+            var x = document.getElementById("sidemenu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
         // ----------modal-------------
 
