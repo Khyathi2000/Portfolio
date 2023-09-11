@@ -213,6 +213,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    text-align: center;
 }
 
 .skills-section-for-big-screen .skills-tab-contents .skills-list div i{
@@ -224,6 +225,7 @@ nav ul li a:hover::after{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    justify-content: center;
 }
 
 .skills-section-for-big-screen .skills-tab-contents .skills-list div:hover{
@@ -296,7 +298,9 @@ nav ul li a:hover::after{
 
 .skills-tab-contents-for-small-screen .skills-list div h2{
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 180;
+    text-align: center;
+
 }
 
 .skills-tab-contents-for-small-screen .skills-list div:hover{
